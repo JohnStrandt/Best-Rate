@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+:root {
+  --br-blue: #023ca7;
+  --dark-color: #141414;
+  --text-color: #262626;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  background: #fff;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: #262626;
+  text-decoration: none; /* removes link underline */
+}
+
+ul {
+  list-style: none; /* removes list bullets */
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main-nav {
+  display: flex; /* sets contents horizontally */
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 20px 0; /* redundant with align-items: center */
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.main-nav ul {
+  display: flex; /* sets ul horizontaly */
+}
+
+.main-nav ul li {
+  padding: 0 20px; /* space out links */
+}
+
+.main-nav ul li a {
+  padding-bottom: 4px; /* space between hover underline */
+}
+
+.main-nav .logo {
+  width: 200px; /* resize logo */
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid var(--text-color); 
+}
+
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: url("./images/dripping-faucet.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizonal center */
+  justify-content: flex-end; /* column center (vert) */
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.showcase-content {
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  margin; auto;
+  border-radius: 10px;
+}
+
+.showcase h2 {
+  text-align: center;
+}
+
+.call {
+  background-color: var(--br-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.call i {
+  width: 75px;
+}
+
+.card-container {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card{
+  background: rgba(205, 204, 204, 0.36);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  height: 300px;
+  padding: 20px;
+}
+
+.card img{
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card .card-text,
+.card img,
+.card i{
+  align-self: center;
+  justify-self: center;
+}
+
+.card .card-text {
+  color: var(--text-color);
+  padding: 0 20px;
+}
+
+.card h3 {
+  line-height: 3rem;
+}
+
+.card i{
+  color: var(--br-blue);
+}
+
+.services-head h1{
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-content{
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 40px 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--br-blue);
+}
+
+.footer p {
+  padding: 50px 0;
+}
+
+@media(max-width: 768px){
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    height: 200px;
+  }
+
+}
+
+
+
+
+
+
+
+
