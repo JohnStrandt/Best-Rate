@@ -137,7 +137,7 @@ ul {
   grid-template-columns: 1fr 2fr;
   border-radius: 10px;
   height: 300px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .card img {
