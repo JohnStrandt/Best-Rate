@@ -7,42 +7,69 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous"
-  />
-    <link rel="stylesheet" href="style.css">
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Best Rate Plumbing</title>
   </head>
   <body>
   
     <div class="container">
       
-      <nav class="main-nav">
-        <img src="images/brlogo-sm.png" class="logo">
-        <ul class="main-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+      <nav class="nav">
+          <img src="images/brlogo-sm.png" class="logo">
+
+          <div class="menu-btn">
+            <div class="menu-btn_burger">
+            </div>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+          </ul>
       </nav>
 
-      <div class="showcase">
-        <div class="showcase-content">
-          <h2>Welcome to Best Rate Plumbing!</h2>
-          <p>Serving Waukesha and Milwaukee Counties</p>
-          <p>Commercial & Residential</p>
-          <p>24 hour emergency repairs</p>
-          <p>licensed, bonded, and insured</p>
-          <p>Senior discounts, free estimates</p>
-          
+      <div class="larger-screens">
+        <div class="showcase">
+          <div class="showcase-content">
+            <h2>Best Rate Plumbing</h2>
+            <p>Serving Waukesha and Milwaukee</p>
+            <p>Commercial & Residential</p>
+            <p>24 hour emergency repairs</p>
+            <p>licensed, bonded, and insured</p>
+            <p>Senior discounts, free estimates</p>
+          </div>
         </div>
-      </div>
       
-      <div class="call">
-        <img src="images/br-wht-sm.png">
-        <h2>(262)777-0709</h2>
-        <i class="fas fa-phone fa-2x"></i>
-      </div>
+        <div class="call">
+            <img src="images/br-wht-sm.png">
+            <h2>(262)777-0709</h2>
+            <i class="fas fa-phone fa-2x"></i>
+        </div>
+      </div>  <!-- larger screens -->
 
+
+      <div class="mobile">
+        <div class="mobile-image"><img src="images/white-tub.jpg"></div>
+
+        <div class="mobile-text">
+          <h3>Best Rate Plumbing</h3>
+          <p>Serving Waukesha and Milwaukee | Commercial & Residential | 24 hour emergency repairs | licensed, bonded, and insured | Senior discounts | free estimates</p>
+        </div>
+
+        <h3>click to call:</h3>
+
+        <div class="call">
+          <a href="tel:(262)777-0709">
+            <img src="images/br-wht-sm.png">
+            <h2>(262)777-0709</h2>
+            <i class="fas fa-phone fa-2x"></i>
+          </a>
+        </div>
+      </div>   <!-- mobile -->
+      
 
       <div class="card-container">
 
@@ -63,7 +90,7 @@
         </div>
 
         <div class="card">     
-          <i class="fas fa-exclamation-triangle fa-8x"></i>
+          <i class="fas fa-exclamation-triangle fa-5x"></i>
           <div class="card-text">
             <h3>Emergencies</h3>
             <p>Call us for your plumbing emergency.  We will get your plumbing problems sorted out in no time!</p>
@@ -71,10 +98,10 @@
         </div>
 
         <div class="card">     
-          <i class="fas fa-restroom fa-8x"></i>
+          <i class="fas fa-restroom fa-5x"></i>
           <div class="card-text">
             <h3>Commercial</h3>
-            <p>We handle all kinds of commercial plumbing requests, but we will never let a man use the ladies restroom.</p>
+            <p>We handle all kinds of commercial plumbing requests, no job too big for Best Rate.</p>
           </div>
         </div>
 
@@ -83,6 +110,10 @@
 
       <footer class="footer">  
         <p>&copy Best Rate Plumbing 2020</p>
+        <p>phone (262)777-0709</p>
+        <p>mp #260860</p>
       </footer>
+
+      <script src="main.js"></script>
   </body>
 </html>
