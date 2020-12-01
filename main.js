@@ -1,19 +1,9 @@
-// const hamburger = document.querySelector('.hamburger');
-// const navLinks = document.querySelector('.nav-links');
-// const links = document.querySelectorAll('.nav-links li');
-
-// hamburger.addEventListener('click', () => {
-//   navLinks.classList.toggle('open');
-//   links.forEach(link => {
-//     link.classList.toggle('fade');
-//   });
-// });
-
 
 const navLinks = document.querySelector('.nav-links');
 const links = document.querySelectorAll('.nav-links li');
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
+
 menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
